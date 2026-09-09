@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-09-09T00:00:00Z",
+  "agents": {
+    "cursor": {
+      "name": "Cursor IDE",
+      "format": "standard_mcpServers",
+      "paths": {
+        "darwin": "~/Library/Application Support/Cursor/User/globalStorage/cursor.mcp/mcp.json",
+        "linux": "~/.config/Cursor/User/globalStorage/cursor.mcp/mcp.json",
+        "windows": "%APPDATA%/Cursor/User/globalStorage/cursor.mcp/mcp.json"
+      }
+    },
+    "opencode": {
+      "name": "OpenCode CLI",
+      "format": "opencode_mcp",
+      "paths": {
+        "all": "~/.config/opencode/opencode.jsonc"
+      }
+    },
+    "claude_code": {
+      "name": "Claude Code CLI",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.claude/mcp.json"
+      }
+    },
+    "zed": {
+      "name": "Zed Editor",
+      "format": "zed_context_servers",
+      "paths": {
+        "all": "~/.config/zed/settings.json"
+      }
+    },
+    "windsurf": {
+      "name": "Windsurf",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.codeium/windsurf/mcp_config.json"
+      }
+    },
+    "vscode": {
+      "name": "VS Code",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/mcp.json"
+      }
+    }
+  }
+}
