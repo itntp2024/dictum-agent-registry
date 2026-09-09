@@ -1,7 +1,56 @@
 {
-  "version": "1.0.0",
-  "updated_at": "2026-09-09T14:07:28Z",
+  "version": "1.0.1",
+  "updated_at": "2026-09-09T14:23:13Z",
   "agents": {
+    "ai_sdk_mcp": {
+      "name": "@ai-sdk/mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/ai_sdk_mcp/mcp.json"
+      }
+    },
+    "amruthpillai_reactive_resume": {
+      "name": "amruthpillai/reactive-resume",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/amruthpillai_reactive_resume/mcp.json"
+      }
+    },
+    "analysis_services_powerbi_modeli": {
+      "name": "Power BI Modeling MCP Server",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/analysis_services_powerbi_modeli/mcp.json"
+      }
+    },
+    "automatalabs_copilot_mcp": {
+      "name": "Copilot MCP + Agent Skills Manager",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/automatalabs_copilot_mcp/mcp.json"
+      }
+    },
+    "bestofthemcp_bestofthemcp": {
+      "name": "Best of the MCP - Universal MCP Service Installer",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/bestofthemcp_bestofthemcp/mcp.json"
+      }
+    },
+    "chrome_devtools_mcp": {
+      "name": "chrome-devtools-mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/chrome_devtools_mcp/mcp.json"
+      }
+    },
+    "chromedevtools_chrome_devtools_m": {
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/chromedevtools_chrome_devtools_m/mcp.json"
+      }
+    },
     "claude_code": {
       "name": "Claude Code CLI",
       "format": "standard_mcpServers",
@@ -18,11 +67,242 @@
         "windows": "%APPDATA%/Cursor/User/globalStorage/cursor.mcp/mcp.json"
       }
     },
+    "d4vinci_scrapling": {
+      "name": "D4Vinci/Scrapling",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/d4vinci_scrapling/mcp.json"
+      }
+    },
+    "deepseek_ai_dsh_mcp_client": {
+      "name": "@deepseek-ai/dsh-mcp-client",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/deepseek_ai_dsh_mcp_client/mcp.json"
+      }
+    },
+    "deusdata_codebase_memory_mcp": {
+      "name": "DeusData/codebase-memory-mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/deusdata_codebase_memory_mcp/mcp.json"
+      }
+    },
+    "doois_smart_mcp_manager": {
+      "name": "Smart MCP Manager",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/doois_smart_mcp_manager/mcp.json"
+      }
+    },
+    "google_gemini_gemini_cli": {
+      "name": "google-gemini/gemini-cli",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/google_gemini_gemini_cli/mcp.json"
+      }
+    },
+    "hono_mcp": {
+      "name": "@hono/mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/hono_mcp/mcp.json"
+      }
+    },
+    "industrial_curiosity_mcp_eavesdr": {
+      "name": "MCP Eavesdrop - Agent MCP Call Monitor",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/industrial_curiosity_mcp_eavesdr/mcp.json"
+      }
+    },
+    "kernlang_kern_mcp_security": {
+      "name": "MCP Security Scanner — OWASP Rules for MCP Servers",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/kernlang_kern_mcp_security/mcp.json"
+      }
+    },
+    "koala73_worldmonitor": {
+      "name": "koala73/worldmonitor",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/koala73_worldmonitor/mcp.json"
+      }
+    },
+    "madskristensen_githubnode": {
+      "name": ".github + MCP",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/madskristensen_githubnode/mcp.json"
+      }
+    },
+    "maxanatsko_mcp_engine": {
+      "name": "SemanticOps MCP - Power BI MCP Server",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/maxanatsko_mcp_engine/mcp.json"
+      }
+    },
+    "mcp_proxy": {
+      "name": "mcp-proxy",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/mcp_proxy/mcp.json"
+      }
+    },
+    "mcp_ui_client": {
+      "name": "@mcp-ui/client",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/mcp_ui_client/mcp.json"
+      }
+    },
+    "mcp_ui_server": {
+      "name": "@mcp-ui/server",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/mcp_ui_server/mcp.json"
+      }
+    },
+    "mcpgood_mcpgood": {
+      "name": "MCP Good - Universal MCP Service Installer",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/mcpgood_mcpgood/mcp.json"
+      }
+    },
+    "ms_azuretools_vscode_azure_mcp_s": {
+      "name": "Azure MCP Server",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.vscode/extensions/ms_azuretools_vscode_azure_mcp_s/mcp.json"
+      }
+    },
+    "n8n_io_n8n": {
+      "name": "n8n-io/n8n",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/n8n_io_n8n/mcp.json"
+      }
+    },
     "opencode": {
       "name": "OpenCode CLI",
       "format": "opencode_mcp",
       "paths": {
         "all": "~/.config/opencode/opencode.jsonc"
+      }
+    },
+    "playwright_mcp": {
+      "name": "@playwright/mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/playwright_mcp/mcp.json"
+      }
+    },
+    "pypi_00_merlin_hu_mcpdemo_pipy": {
+      "name": "Add your description here",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_00_merlin_hu_mcpdemo_pipy/mcp.json"
+      }
+    },
+    "pypi_00_renjing_mcp_server_pypi": {
+      "name": "Add your description here",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_00_renjing_mcp_server_pypi/mcp.json"
+      }
+    },
+    "pypi_021_mcp": {
+      "name": "MCP server for interacting with LLM traces - search, analyze, an",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_021_mcp/mcp.json"
+      }
+    },
+    "pypi_0xchron_polymarket_mcp": {
+      "name": "Read-only Polymarket prediction market data for AI agents (MCP s",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_0xchron_polymarket_mcp/mcp.json"
+      }
+    },
+    "pypi_0xdegenmo_lighter_mcp": {
+      "name": "MCP server for Lighter DEX — trade perp futures from any MCP cli",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_0xdegenmo_lighter_mcp/mcp.json"
+      }
+    },
+    "pypi_100_mcping": {
+      "name": "Minecraft 服务器状态查询工具，支持 Java 版和 Bedrock 基岩版",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_100_mcping/mcp.json"
+      }
+    },
+    "pypi_12306_mcp": {
+      "name": "Add your description here",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_12306_mcp/mcp.json"
+      }
+    },
+    "pypi_12306_search_mcp": {
+      "name": "12306-mcp-server,用于查询12306车票信息",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_12306_search_mcp/mcp.json"
+      }
+    },
+    "pypi_171_py_mcp_demo": {
+      "name": "Add your description here",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_171_py_mcp_demo/mcp.json"
+      }
+    },
+    "pypi_17_learnai_mcp_demo": {
+      "name": "Add your description here",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/pypi_17_learnai_mcp_demo/mcp.json"
+      }
+    },
+    "ruvnet_ruflo": {
+      "name": "ruvnet/ruflo",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/ruvnet_ruflo/mcp.json"
+      }
+    },
+    "sansan0_trendradar": {
+      "name": "sansan0/TrendRadar",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/sansan0_trendradar/mcp.json"
+      }
+    },
+    "supabase_mcp_utils": {
+      "name": "@supabase/mcp-utils",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/supabase_mcp_utils/mcp.json"
+      }
+    },
+    "upstash_context7": {
+      "name": "upstash/context7",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/upstash_context7/mcp.json"
+      }
+    },
+    "upstash_context7_mcp": {
+      "name": "@upstash/context7-mcp",
+      "format": "standard_mcpServers",
+      "paths": {
+        "all": "~/.config/upstash_context7_mcp/mcp.json"
       }
     },
     "vscode": {
