@@ -1,9 +1,9 @@
 # dictum-agent-registry
 
-[![Scrape](https://github.com/itntp2024/dictum-agent-registry/actions/workflows/scrape.yml/badge.svg)](https://github.com/itntp2024/dictum-agent-registry/actions/workflows/scrape.yml)
+[![Scrape](https://github.com/Fachryxyf/dictum-agent-registry/actions/workflows/scrape.yml/badge.svg)](https://github.com/Fachryxyf/dictum-agent-registry/actions/workflows/scrape.yml)
 [![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)](./agents_master_registry.json)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
-[![Registry](https://img.shields.io/badge/registry-public-lightgrey)](https://raw.githubusercontent.com/itntp2024/dictum-agent-registry/main/agents_master_registry.json)
+[![Registry](https://img.shields.io/badge/registry-public-lightgrey)](https://raw.githubusercontent.com/Fachryxyf/dictum-agent-registry/main/agents_master_registry.json)
 
 Public catalog for Dictum MCP agent configurations. This repository is updated automatically by GitHub Actions and consumed by `dictum link` on local developer machines. It contains no secrets, no private gateway code, and no user data.
 
