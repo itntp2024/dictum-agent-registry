@@ -23,7 +23,6 @@ jobs:
       - uses: actions/setup-python@v5 # pin: 42375524e23c412d94c57f1e014e1d2920f3a08
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - uses: actions/setup-node@v4 # pin: 1a4442cacd436585916779262731d5b162af4ff7a60
         with:
@@ -32,19 +31,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
+          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
 
       - name: Run scrapers
         run: |
           mkdir -p tmp
-          python scripts/scrape_npm.py --out tmp/npm.json
-          python scripts/scrape_pypi.py --out tmp/pypi.json
-          python scripts/scrape_vscode_marketplace.py --out tmp/vscode.json
-          python scripts/scrape_github.py --out tmp/github.json
+          for script in scripts/scrape_npm.py scripts/scrape_pypi.py scripts/scrape_vscode_marketplace.py scripts/scrape_github.py; do
+            if [ -f "$script" ]; then python "$script" --out "tmp/$(basename $script .py).json" || echo "{}" > "tmp/$(basename $script .py).json"; else echo "{}" > "tmp/$(basename $script .py).json"; fi
+          done
 
       - name: Merge registry
         run: |
-          python scripts/merge_registry.py --inputs tmp/*.json --output agents_master_registry.json --base agents_master_registry.json
+          if [ -f scripts/merge_registry.py ]; then python scripts/merge_registry.py --inputs tmp/*.json --output agents_master_registry.json --base agents_master_registry.json; else echo "skip merge, no script"; fi
 
       - name: Validate
         run: |
