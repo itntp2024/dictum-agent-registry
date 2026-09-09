@@ -1,7 +1,7 @@
 # dictum-agent-registry
 
 [![Scrape](https://github.com/Fachryxyf/dictum-agent-registry/actions/workflows/scrape.yml/badge.svg)](https://github.com/Fachryxyf/dictum-agent-registry/actions/workflows/scrape.yml)
-[![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)](./agents_master_registry.json)
+[![Version 1.0.1](https://img.shields.io/badge/version-1.0.1-blue)](./agents_master_registry.json)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Registry](https://img.shields.io/badge/registry-public-lightgrey)](https://raw.githubusercontent.com/Fachryxyf/dictum-agent-registry/main/agents_master_registry.json)
 
@@ -50,7 +50,7 @@ Schema:
 
 ### Top Level
 
-- `version`: string `MAJOR.MINOR.PATCH` of registry schema. Increment `MAJOR` for breaking structure, `MINOR` for new agents, `PATCH` for path or name fixes.
+- `version`: string `MAJOR.MINOR.PATCH` of registry data. Increment `MAJOR` for breaking structure or a new incompatible format, `MINOR` for a new compatible format, and `PATCH` for agent additions or metadata/path fixes.
 - `updated_at`: ISO 8601 UTC timestamp of last successful scrape. Set by workflow, not manually.
 - `agents`: object keyed by stable agent id `^[a-z0-9_]+$` lower snake case.
 
@@ -104,7 +104,7 @@ Steps:
 2. Setup Python 3.11 and Node 20 for marketplace scrapers
 3. Install scraper dependencies `pip install -r scripts/requirements.txt`
 4. Run scrapers in `scripts/scrape_npm.py`, `scripts/scrape_pypi.py`, `scripts/scrape_vscode_marketplace.py`, `scripts/scrape_github.py` that produce partial catalogs in `tmp/`
-5. Merge via `scripts/merge_registry.py` that validates schema, sorts agents alphabetically, sets `version` patch bump if only additions, and writes `agents_master_registry.json` with `updated_at` now
+5. Merge via `scripts/merge_registry.py` that validates schema, sorts agents alphabetically, sets a patch bump for agent additions or a minor bump for a new compatible format, and writes `agents_master_registry.json` with `updated_at` now
 6. If file changed, commit with message `chore: registry update <date>` and push
 7. Tag `v<version>` if `version` changed
 
@@ -131,9 +131,10 @@ Do not include secrets, tokens, or private gateway URLs in this repository. The 
 ## Versioning
 
 - `1.0.0` initial catalog with 6 agents: cursor, opencode, claude_code, zed, windsurf, vscode.
-- Patch increments for path fixes.
-- Minor increments for new agent additions.
-- Major increments for schema changes such as new `format` values or top level keys.
+- `1.0.1` first real scraper merge with 46 catalog entries.
+- Patch increments for agent additions and metadata/path fixes.
+- Minor increments for new compatible `format` values.
+- Major increments for breaking schema changes.
 
 Raw URL stability: `https://raw.githubusercontent.com/<org>/dictum-agent-registry/main/agents_master_registry.json` is immutable per commit and cached by CLI fallback.
 
